@@ -1,0 +1,22 @@
+---
+title: "SQL"
+output: html_document
+---
+
+
+## Filtering Columns and Rows
+In SQL, one can filter columns and rows of a selected table.Columns can be filtered using the SELECT command, and rows can be filtered using the WHERE command. Following is an example of this using the Lahman baseball database.
+
+```{r warning=FALSE,message=FALSE}
+library(Lahman)
+library(sqldf)
+```
+
+
+
+```{r}
+query<-"SELECT playerID,teamID,yearID,HR from Batting WHERE teamID='NYA'and yearID=1927"
+
+sqldf(query)
+```
+
