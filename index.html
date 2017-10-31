@@ -154,6 +154,44 @@ sqldf(query)</code></pre>
 ## 23 shockur01    NYA   1927  0
 ## 24 thomamy01    NYA   1927  0
 ## 25  weraju01    NYA   1927  1</code></pre>
+<div id="examples" class="section level3">
+<h3>Examples</h3>
+<p>Find all instances where yankees have hit forty or more homeruns.</p>
+<pre class="r"><code>query&lt;-&quot;SELECT playerID,teamID,yearID,HR FROM Batting WHERE teamID='NYA' and HR&gt;=40&quot;
+
+sqldf(query)</code></pre>
+<pre><code>##     playerID teamID yearID HR
+## 1   ruthba01    NYA   1920 54
+## 2   ruthba01    NYA   1921 59
+## 3   ruthba01    NYA   1923 41
+## 4   ruthba01    NYA   1924 46
+## 5   ruthba01    NYA   1926 47
+## 6  gehrilo01    NYA   1927 47
+## 7   ruthba01    NYA   1927 60
+## 8   ruthba01    NYA   1928 54
+## 9   ruthba01    NYA   1929 46
+## 10 gehrilo01    NYA   1930 41
+## 11  ruthba01    NYA   1930 49
+## 12 gehrilo01    NYA   1931 46
+## 13  ruthba01    NYA   1931 46
+## 14  ruthba01    NYA   1932 41
+## 15 gehrilo01    NYA   1934 49
+## 16 gehrilo01    NYA   1936 49
+## 17 dimagjo01    NYA   1937 46
+## 18 mantlmi01    NYA   1956 52
+## 19 mantlmi01    NYA   1958 42
+## 20 mantlmi01    NYA   1960 40
+## 21 mantlmi01    NYA   1961 54
+## 22 marisro01    NYA   1961 61
+## 23 jacksre01    NYA   1980 41
+## 24 martiti02    NYA   1997 44
+## 25 giambja01    NYA   2002 41
+## 26 giambja01    NYA   2003 41
+## 27 rodrial01    NYA   2005 48
+## 28 rodrial01    NYA   2007 54
+## 29 grandcu01    NYA   2011 41
+## 30 grandcu01    NYA   2012 43</code></pre>
+</div>
 </div>
 
 

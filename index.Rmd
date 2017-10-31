@@ -20,3 +20,15 @@ query<-"SELECT playerID,teamID,yearID,HR from Batting WHERE teamID='NYA'and year
 sqldf(query)
 ```
 
+
+### Examples
+
+Find all instances where yankees have hit forty or more homeruns.
+
+
+```{r}
+query<-"SELECT playerID,teamID,yearID,HR FROM Batting WHERE teamID='NYA' and HR>=40"
+
+sqldf(query)
+```
+
