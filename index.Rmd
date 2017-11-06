@@ -1,4 +1,4 @@
----
+  ---
 title: "SQL"
 output: html_document
 ---
@@ -30,5 +30,11 @@ Find all instances where yankees have hit forty or more homeruns.
 query<-"SELECT playerID,teamID,yearID,HR FROM Batting WHERE teamID='NYA' and HR>=40"
 
 sqldf(query)
+```
+
+##Order By
+
+```{r}
+
 ```
 
