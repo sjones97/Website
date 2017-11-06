@@ -35,6 +35,9 @@ sqldf(query)
 ##Order By
 
 ```{r}
-
+query<-"SELECT playerID,yearID,teamID,HR FROM Batting
+WHERE HR>50
+ORDER BY HR DESC"
+sqldf(query)
 ```
 
